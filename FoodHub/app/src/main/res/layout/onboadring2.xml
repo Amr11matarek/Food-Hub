@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Screen"
+    tools:context=".Onboadring1">
+
+    <ImageView
+        android:id="@+id/ONB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/groubonboadrin2dark">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txt1ONB2"
+        style="@style/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ONB2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:text="Even to space with "
+        android:textSize="36dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt2ONB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1ONB2"
+        android:layout_centerHorizontal="true"
+        android:text="us! Together"
+        android:textSize="36dp"
+        style="@style/Text1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt3ONB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2ONB2"
+        android:layout_centerHorizontal="true"
+        android:text="Our app can send you everywhere, even"
+        style="@style/Text2">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt4ONB2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3ONB2"
+        android:layout_centerHorizontal="true"
+        android:text="space. For only $2.99 per month"
+        style="@style/Text2">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/BtnONB2"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txt4ONB2"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FE724C"
+        android:layout_marginTop="35dp"
+        app:cornerRadius="300px"
+        android:drawableLeft="@drawable/arrow">
+
+    </Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Screen"
+    tools:context=".Onboadring1">
+
+    <ImageView
+        android:id="@+id/ONB1_FG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/groubonboadrin1dark">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/txt1ONB1_FG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ONB1_FG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="111dp"
+        android:text="Browse your  menu"
+        android:textSize="36dp"
+        style="@style/Text1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt2ONB1_FG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1ONB1_FG"
+        android:layout_centerHorizontal="true"
+        android:text="and order directly"
+        android:textSize="36dp"
+        style="@style/Text1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt3ONB1_FG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2ONB1_FG"
+        android:layout_centerHorizontal="true"
+        android:text="Our app can send you everywhere, even"
+        style="@style/Text2">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt4ONB1_FG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3ONB1_FG"
+        android:layout_centerHorizontal="true"
+        android:text="space. For only $2.99 per month"
+        style="@style/Text2">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/BtnONB1_FG"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txt4ONB1_FG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#FE724C"
+        android:drawableLeft="@drawable/arrow"
+        app:cornerRadius="300px">
+
+    </Button>
+
+
+</RelativeLayout>

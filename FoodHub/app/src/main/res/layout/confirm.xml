@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Screen"
+    tools:context=".Confirm">
+
+
+    <TextView
+        android:id="@+id/PaymentTxt"
+        style="@style/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Payment"
+        android:textSize="18dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/shipingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping to"
+        android:layout_below="@+id/PaymentTxt"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:textSize="18dp"
+        style="@style/Text1"
+        android:textStyle="bold">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/mapimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipingTxt"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/map">
+
+    </ImageView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:layout_below="@+id/shipingTxt"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="51dp">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shipingTxt"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/mapimage"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            style="@style/Text2"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text="4140 Parker Rd. Allentown, New Mexico 31134.">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/confirmpaymentTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        style="@style/Text1"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_below="@+id/mapimage"
+        android:layout_marginStart="25dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/paymentlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmpaymentTxt"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/white"
+            android:drawableBottom="@drawable/ic_baseline_add"
+            app:cornerRadius="150px">
+
+        </Button>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/mastercardpayment">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/paypalpayment">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/applepayment">
+
+        </ImageView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mastrecard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentlin"
+        android:src="@drawable/mastercard"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/mastrecard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FE724C"
+        android:text="Confirm Order"
+        android:textColor="@color/white"
+        app:cornerRadius="100px">
+
+    </Button>
+
+
+</RelativeLayout>
